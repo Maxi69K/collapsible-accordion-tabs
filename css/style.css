@@ -1,0 +1,78 @@
+/*   random images:      https://source.unsplash.com/random    */
+
+/**********************************************
+                Global styles
+**********************************************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #395470;
+  color: #fff;
+}
+
+/**********************************************
+                Specific styles
+**********************************************/
+h1 {
+  text-align: center;
+  margin: 2rem 0;
+  font-size: 2.5rem;
+}
+
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 2rem auto;
+}
+
+.accordion-item {
+  background-color: #fff;
+  color: #111;
+  margin: 1rem 0;
+  border-radius: .5rem;
+}
+
+.accordion-item-header {
+  padding: 0.5rem 3rem 0.5rem 1rem;
+  min-height: 3.5rem;
+  line-height: 1.5rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  cursor: pointer;
+  border-radius: .5rem;
+  transition: all .3s linear;
+}
+
+.accordion-item-header:hover {
+  background-color: #293a4b;
+  color: #fff;
+  transition: all .3s linear;
+}
+
+.accordion-item-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height .3s ease-out;
+}
+
+.accordion-item-body-content {
+  padding: 1rem;
+  line-height: 1.7rem;
+  border-top: 2px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(to right, rgba(17, 17, 17, 0), rgba(17, 17, 17, .9), rgba(17, 17, 17, 0));
+}
+
+/**************************************
+            @media Queries
+**************************************/
+
+/* @media all and (min-width: 576px) {} */
